@@ -13,6 +13,9 @@ bot.start(ctx => ctx.reply("Welcome"));
 bot.hears("hello", ctx => {
   ctx.reply("Hello to you too!");
 });
+bot.hears("date", ctx => {
+  ctx.reply("Date and time is: " + new Date());
+});
 
 bot.launch();
 
