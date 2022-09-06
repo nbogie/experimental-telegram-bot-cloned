@@ -1,5 +1,11 @@
 import express from "express";
 
+/** configures and starts express on process.env.PORT.
+ *
+ * You might find this useful for another way to interact
+ * with the server other than the bot.
+ * (e.g. to change a message-of-the-day, or to obtain stats)
+ */
 function configureAndStartExpress() {
   const app = express();
   const port = process.env.PORT ?? 3333;
