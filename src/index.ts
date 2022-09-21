@@ -20,8 +20,8 @@ registerManyExampleListeners(bot);
 bot.launch();
 
 // // Enable graceful stop
-process.once("SIGINT", () => bot.stop("SIGINT"));
-process.once("SIGTERM", () => bot.stop("SIGTERM"));
+process.once("SIGINT", () => { console.log("send SIGINT to bot"); bot.stop("SIGINT"); });
+process.once("SIGTERM", () => { console.log("send SIGINT to bot"); bot.stop("SIGTERM"); });
 
 //optional
 configureAndStartExpress();
