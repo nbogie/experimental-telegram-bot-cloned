@@ -8,6 +8,7 @@
   "scripts": {
     "dev": "nodemon src/index.ts",
     "build": "tsc",
+    "build-on-render": "yarn tsc",
     "start": "node dist/index.js"
   },
   "dependencies": {
