@@ -2,7 +2,8 @@ import { Telegraf } from "telegraf";
 import { configureAndStartExpress } from "./setupExpress";
 import { registerManyExampleListeners } from "./exampleListeners";
 import { setupPhotoSaver } from "./photoSaver";
-
+import dotenv from "dotenv"
+dotenv.config()
 /*
   TELEGRAM_BOT_TOKEN is an environment variable
   that should be obtained from botfather and
