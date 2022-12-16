@@ -9,7 +9,9 @@ tags:
 
 # Telegram bot example
 
-This is an extension of Faraz Patankar's example, integrating most of the extended example at https://github.com/nbogie/telegram-parlour-games-bot
+This is an extension of Faraz Patankar's example.  Mostly it adds a lot of different example responses to that small demo.
+
+It integrates most of the extended examples at https://github.com/nbogie/telegram-parlour-games-bot
 
 This example starts a [Telegram](https://telegram.org/) bot on an [ExpressJS](https://expressjs.com/) server.
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/RwXXg-?referralCode=xxY8p-)
