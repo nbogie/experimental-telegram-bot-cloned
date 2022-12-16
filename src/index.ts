@@ -2,6 +2,8 @@ import { Telegraf } from "telegraf";
 import { configureAndStartExpress } from "./setupExpress";
 import { registerManyExampleListeners } from "./exampleListeners";
 import { setupPhotoSaver } from "./photoSaver";
+import { config } from "dotenv";
+config();
 
 /*
   TELEGRAM_BOT_TOKEN is an environment variable
@@ -10,7 +12,7 @@ import { setupPhotoSaver } from "./photoSaver";
 */
 
 if (!process.env.TELEGRAM_BOT_TOKEN) {
-  throw new Error("Please add a bot token");
+    throw new Error("Please add a bot token");
 }
 const bot = new Telegraf(process.env.TELEGRAM_BOT_TOKEN);
 
